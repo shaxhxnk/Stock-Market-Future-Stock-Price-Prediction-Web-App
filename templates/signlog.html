@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMPS</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='logstyle.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="">
+	<h1>Enter Stock Symbol</h1>
+	<div class="social-container">
+		<!-- <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a> -->
+	</div>
+	
+	<input type="text" name="name" placeholder="Enter Symbol">
+	<!-- <input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password"> -->
+	<button>Predict</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form class="login" action = "{{ url_for('prediction') }}" method = "POST">
+		<h1>Enter Stock Symbol</h1>
+		<div class="social-container">
+		<!-- <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a> -->
+	</div>
+	{% if not_found %}
+	<span style="color: red;">Stock Symbol (Ticker) Not Found. Please Enter a Valid Stock Symbol</span>
+	{% endif %}
+	<input type="text" name="nm" placeholder="Enter Company Stock Symbol">
+	<!-- <input type="password" name="password" placeholder="Password"> -->
+	<a href="#"></a>
+
+	<button>Predict</button>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<button class="ghost" id="signIn">Sign In</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>SMPS</h1>
+			<p>Helps you predict the future</p>
+			<!-- <button class="ghost" id="signUp">Sign Up</button> -->
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
