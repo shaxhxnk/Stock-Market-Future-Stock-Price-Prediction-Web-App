@@ -5,7 +5,7 @@ Stock Market Future Prediction Web App based on Machine Learning and Sentiment A
 Due to the space limit download the wordpress file from [here](https://drive.google.com/file/d/1y34yup3uSOcKr1Hhp-_RPp530cJbDXCZ/view?usp=sharing).
 
 ## Screenshots
-9.![image](https://user-images.githubusercontent.com/76894348/175959454-738a9e26-dfed-4f7f-be5c-5770e5d3a8ac.png)
+![image](https://user-images.githubusercontent.com/76894348/175959454-738a9e26-dfed-4f7f-be5c-5770e5d3a8ac.png)
 ![image](https://user-images.githubusercontent.com/76894348/175959472-fb5e1d5b-28d1-45c0-be0c-ff3407b4a313.png)
 ![image](https://user-images.githubusercontent.com/76894348/175959488-7b2abd21-a058-4127-9d64-e9549c4eed77.png)
 ![image](https://user-images.githubusercontent.com/76894348/175959510-eed7be6a-cc3b-4d6e-9081-b047551a566c.png)
